@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html","k":"18"},{"p":"Ficha6.Ex1","l":"Comboio"},{"p":"Ficha6.Ex1","l":"ComboioMercadorias"},{"p":"Ficha6.Ex1","l":"ComboioPassageiros"},{"p":"Ficha6.Ex1","l":"ControloFerrovia"},{"p":"Ficha6.Ex1","l":"Passageiro"}];updateSearchResults();
