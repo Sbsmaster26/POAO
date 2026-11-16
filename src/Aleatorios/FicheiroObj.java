@@ -11,7 +11,7 @@ import java.io.ObjectOutputStream;
 public class FicheiroObj {
     public static void main(String[] args){
         File f = new File("ficheiro.obj");
-        Person person = new Person("Luis", 30, 111223212);
+        Person person = new Person("Daniel", 30, 111223212);
         try {
             FileOutputStream fos = new FileOutputStream(f);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -22,18 +22,18 @@ public class FicheiroObj {
         } catch (IOException ex) {
             System.out.println("Erro a escrever para o ficheiro.");
         }
-        // try{
-        //     FileInputStream fis = new FileInputStream(f);
-        //     ObjectInputStream ois = new ObjectInputStream(fis);
-        //     Person person = (Person)ois.readObject();
-        //     System.out.println(person);
-        //     ois.close();
-        // }catch (FileNotFoundException ex) {
-        //     System.out.println("Erro a abrir ficheiro.");
-        // }catch (IOException ex) {
-        //     System.out.println("Erro a ler ficheiro.");
-        // }catch (ClassNotFoundException ex) {
-        //     System.out.println("Erro a converter objeto.");
-        // }
+        try{
+            FileInputStream fis = new FileInputStream(f);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            Person person1 = (Person)ois.readObject();
+            System.out.println(person1);
+            ois.close();
+        }catch (FileNotFoundException ex) {
+            System.out.println("Erro a abrir ficheiro.");
+        }catch (IOException ex) {
+            System.out.println("Erro a ler ficheiro.");
+        }catch (ClassNotFoundException ex) {
+            System.out.println("Erro a converter objeto.");
+        }
     }
 }
