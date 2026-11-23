@@ -2,7 +2,7 @@ package Ficha4;
 
 
 
-class Estacao{
+public class Estacao{
     private String nome;
     private double posicao;
 
