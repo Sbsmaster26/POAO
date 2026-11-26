@@ -1,9 +1,11 @@
 package Ficha11.Ex1;
 
 import java.io.*;
+import java.util.ArrayList;
 
 public class ConsultaHorarios {
     public static void main(String[] args){
+        ArrayList<String[]> comboios = new ArrayList<>();
         File f = new File("Comboios.txt");
         if (f.exists() && f.isFile()){
             try{
@@ -11,9 +13,12 @@ public class ConsultaHorarios {
                 BufferedReader br = new BufferedReader(fr);
                 String line;
                 while((line = br.readLine()) != null){
-                    line.split(";");
+                    String[] array = line.split(";");
+                    comboios.add(array);
                 }
-            }catch{}
+            }catch{
+                
+            }
         }
     
     }

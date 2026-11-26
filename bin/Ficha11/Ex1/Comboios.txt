@@ -1,0 +1,4 @@
+IC101;Lisboa;09:30;1
+AP202;Porto;11:45;1
+R303;Aveiro;14:15;1
+IC404;Faro;17:20;1
