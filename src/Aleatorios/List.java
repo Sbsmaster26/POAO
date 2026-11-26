@@ -1,7 +1,7 @@
 package Aleatorios;
 
 import javax.swing.*;
-import java.awt.*;
+// import java.awt.*;
 import java.awt.event.*;
 
 
@@ -16,7 +16,7 @@ public class List extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JLabel label = new JLabel("Lista de valores (selecionar 1 ou mais valores)");
         label.setBounds(50, 10, 300, 25);
-        DefaultListModel listValues = new DefaultListModel();
+        DefaultListModel<String> listValues = new DefaultListModel();
         listValues.addElement("Daniel");
         listValues.addElement("Candeeiro");
         listValues.addElement("Cinturão");
